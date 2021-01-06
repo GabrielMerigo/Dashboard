@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+html,body{
+    height: 100%;
+}
+
+
+.clear{
+    clear: both;
+}
+
+/******Sidebar*****/
+
+div.sidebar{
+    width: 20%;
+    max-width: 300px;
+    height: 100%;
+    float: left;
+    background-color: #2d3035;
+}
+
+div.topo{
+    background-color: #2d282d;
+    text-align: center;
+    padding: 17px 10px;
+}
+
+div.topo h3{
+    color: white;
+}
+
+div.menu{
+    padding: 30px;
+}
+
+div.menu ul li{
+    transition: 1s;
+    list-style-type: none;
+    margin-bottom:25px;
+    color: #717171;
+    font-size: 19px;
+    
+}
+
+div.menu ul li i{
+    padding:0 6px;
+}
+
+
+div.menu ul li a{
+    color: #717171;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.menu li:hover i{
+    color: #931ff2;
+}
+
+div.menu li:hover a{
+    color: white;
+}
+
+div.menu ul li:last-child{
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+}
+
+
+/*
+
+    FIM DA SIDEBAR
+
+*/
+
+.main-content{
+    float: left;
+    width: calc(100% - 20%);
+    height: 100%;
+}
+
+header{
+    background-color: white;
+    padding: 18px 15px;
+    width: 100%;
+    height: 80px;
+    border-bottom:2px solid #ccc;
+}
+
+.pesquisa-campo{
+    float: right;
+}
+
+.icone-pesquisa{
+    padding: 10px;
+    background: #959595;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    color: white;
+    vertical-align: middle;
+}
+
+.icone-pesquisa i{
+    position: relative;
+    font-size: 17px;
+}
+
+.pesquisa-campo form{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pesquisa-campo input[type=text]{
+    width: 200px;
+    outline: 0;
+    height: 35px;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.icon-alert{
+    float: right;
+    margin-right: 20px;
+    height: 35px;
+    width: 35px;
+    background-color: #fbedef;
+    position: relative;
+    text-align: center;
+}
+
+.icon-alert p{
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    font-weight: bold;
+    font-size: 13px;
+    background:#ed7387;
+    color: white;
+    padding: 2px 3px;
+}
+
+.icon-alert i{
+    color:#ed7387;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: bold;
+}
+
+.usuario h2{
+    font-size: 25px;
+    float: left;
+    cursor: pointer;
+    color: #a7a7a7;
+    margin-top: 9px;
+}
+
+.content1{
+    width: 73%;
+    overflow-y: auto;
+    height: calc(100% - 90px);
+    padding: 30px;
+    display: inline-block;
+}
+
+.panel{
+    width: 100%;
+    padding: 20px;
+    background: white;
+    float: left;
+    margin: 10px 0;
+    border: 3px solid #ccc;
+}
+
+.panel h2{
+    font-size: 22px;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.panel p{
+    font-size: 16px;
+    color:#a7a7a7;
+}
+
+.w50{
+    width: 49%;
+}
+
+.atividades{
+    float: right;
+    background-color: #eaebeb;
+    width: 27%;
+    padding: 20px 35px;
+    height: calc(100% - 80px);
+    display: inline-block;
+    overflow-y: auto;
+}
+
+.atividades-topo h2{
+    color: #7f7f7f;
+    font-size: 23px;
+    font-weight: normal;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.atividades-registro{
+    padding: 0px 10px;
+    border-left: 1px solid #bbb;
+    position: relative;
+}
+
+.atividades-registro h2{
+    color: #bbb;
+    font-size: 17px;
+    padding: 0 5px;
+    font-weight: normal;
+}
+
+.atividades-registro p{
+    color:#b2b2b2;
+    padding: 20px 0;
+}
+
+.circle{
+    width: 17px;
+    height: 18px;
+    background: linear-gradient(#dddddd, white);
+    border-radius: 50%;
+    border:1px solid #b2b2b2;
+    position: absolute;
+    top:0px;
+    left: -9px;
+}
+
+.atividades:nth-child(3) .atividades-registro:nth-child(1){
+    position: absolute;
+    top:50px;
+    left: -9px;
+}
+
+@media screen and (max-width:1221px){
+    .atividades{display: none;}
+    .content1{
+        width: 100%;
+    }
+
+    .w50{
+        margin-left:0px !important;
+        margin-top: 10px;
+        width: 100%;
+    }
+        
+    .sidebar{display: none; position: relative; z-index: 999;}
+
+    .main-content{
+        width: 100%;
+        position: absolute;
+    }
+}

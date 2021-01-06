@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f6c2ae9ac5.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <title>Dashboard</title>
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="topo">
+                <h3>Monki Zimmer</h3>
+            </div><!--topo-->
+
+            <div class="menu">
+                <ul>
+                    <li>  <i class="fas fa-columns"> <a href="#"></i>PAINEL</a></li>
+                    <li>  <i class="fas fa-folder-open"></i><a href="#"></i>CONTEÚDO</a></li>
+                    <li>  <i class="fas fa-chart-bar"></i>  <a href="#"></i>ESTATÍSTICAS</a></li>
+                    <li>  <i class="fas fa-cog"></i> <a href="#"></i>CONFIGURAÇÕES</a></li>
+                    <li> <i class="fas fa-question"></i>  <a href="#"></i>DÚVIDAS</a></li>
+                    <li> <i class="fas fa-users"></i><a href="#"></i>USUÁRIOS</a></li>
+
+                    <li> <i class="fas fa-plug"></i></i><a href="#"></i>DESCONECTAR</a></li>
+                </ul>
+            </div><!--menu-->
+        </div><!--sidebar-->
+
+        <!--FIM-DA-SIDEBAR-->
+
+        <div class="main-content">
+            <header>
+
+                <div class="usuario">
+                    <h2><i class="fas fa-bars"></i><!--MonkiZimmer@gmail.com--></h2>
+                </div>
+
+                <div class="pesquisa-campo">
+                    <div class="icone-pesquisa"><i class="fas fa-search"></i></div><form><input type="text" /></form>
+                </div><!--pesquisa-campo-->
+
+                <div class="icon-alert">
+                    <p>2</p>
+                    <i class="fas fa-bell"></i>
+                </div>
+
+                <div class="clear"></div>
+
+            </header>
+            <div class="clear"></div>
+
+            <div class="content1">
+                <div class="panel">
+                    <h2>OLÁ GABRIEL, SEJA BEM-VINDO!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam impedit, quae aperiam, labore ipsa, 
+                        minima neque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est obcaecati eos dolorem nam beatae aperiam eum, 
+                        minus doloremque dicta quibusdam tempore aliquam, architecto provident illo tenetur modi nemo nulla! Ea!</p>
+                </div><!--panel-->
+
+                <div class="panel">
+                    <h2>OLÁ GABRIEL, SEJA BEM-VINDO!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam impedit, quae aperiam, labore ipsa, 
+                        minima neque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est obcaecati eos dolorem nam beatae aperiam eum, 
+                        minus doloremque dicta quibusdam tempore aliquam, architecto provident illo tenetur modi nemo nulla! Ea!</p>
+                </div><!--panel-->
+
+                <div class="panel w50">
+                    <h2>OLÁ GABRIEL, SEJA BEM-VINDO!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam impedit, quae aperiam, labore ipsa, 
+                        minima neque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est obcaecati eos dolorem nam beatae aperiam eum, 
+                        minus doloremque dicta quibusdam tempore aliquam, architecto provident illo tenetur modi nemo nulla! Ea!</p>
+                </div><!--panel-->
+
+                <div style="margin-left: 2%;" class="panel w50">
+                    <h2>OLÁ GABRIEL, SEJA BEM-VINDO!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam impedit, quae aperiam, labore ipsa, 
+                        minima neque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est obcaecati eos dolorem nam beatae aperiam eum, 
+                        minus doloremque dicta quibusdam tempore aliquam, architecto provident illo tenetur modi nemo nulla! Ea!</p>
+                </div><!--panel-->
+
+            </div><!--content1-->
+
+            <div class="atividades">
+                <div class="atividades-topo">
+                    <h2>Últimas Atividades</h2>
+                </div>
+                <br />
+                    <div class="atividades-registro">
+                        <div class="circle"></div>
+                        <h2>Há 2 minutos</h2>
+                        <p>Uma nova <b>página</b> foi inserida</p>
+                    </div>
+
+                <div class="atividades-registro">
+                    <div class="circle"></div>
+                    <h2>Ontem -  18:00 horas</h2>
+                    <p>O desenvolvedor está corringindo a lading Page.</p>
+                </div>
+
+                <div class="atividades-registro">
+                    <div class="circle"></div>
+                    <h2>Ontem - 22:34</h2>
+                    <p>O dev <b>Marcos</b> adicinou novos conteúdos no JS.</p>
+                </div>
+
+
+            </div>
+        </div><!--main-content-->
+        <div class="clear"></div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            $(function(){
+                var windowWidth = $(window)[0].innerWidth;
+                if(windowWidth <= 1221){
+                $('.usuario h2').click(function(){
+                   var el = $('.sidebar');
+                if(el.is(':visible'))
+                   {
+                   el.hide();
+                    $('.main-content').css('left','0')
+                   }else{
+                   el.show();
+                    $('.main-content').css('left','230px')
+                   }
+            })
+
+            }
+
+            $(window).resize(function(){
+                windowWidth = $(window)[0].innerWidth;
+            })
+
+            })
+            
+        </script>
+    </body>
+</html>
